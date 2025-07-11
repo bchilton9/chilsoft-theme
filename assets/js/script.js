@@ -1,4 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+// COPY BUTTON
+  document.querySelectorAll("pre > code").forEach(codeBlock => {
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.innerHTML = "📋 Copy";
+
+    // Wrap in relative container
+    const pre = codeBlock.parentNode;
+    pre.style.position = "relative";
+    pre.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(codeBlock.textContent);
+        button.innerHTML = "✅ Copied!";
+        setTimeout(() => (button.innerHTML = "📋 Copy"), 1500);
+      } catch (err) {
+        button.innerHTML = "❌ Failed";
+      }
+    });
+  });
+
   // Matrix background
   function startMatrix() {
     const canvas = document.getElementById("matrix");
