@@ -1,4 +1,19 @@
-{% include head.html %}
-
-{{ content }}
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <canvas id="matrix"></canvas>
+    <div class="logo-right">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="ChilSoft Logo" class="full-logo" />
+    </div>
+    <main class="container">
+    <section class="welcome-box">
+      {{ content }}
+      </section>
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+  </body>
+</html>
