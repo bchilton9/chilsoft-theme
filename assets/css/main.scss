@@ -4,3 +4,31 @@ body {
   overscroll-behavior-y: none;
   height: 100%;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Or your dark theme background */
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Fix for iOS bottom white space */
+@supports (-webkit-touch-callout: none) {
+  body::after {
+    content: '';
+    display: block;
+    height: env(safe-area-inset-bottom);
+  }
+}
