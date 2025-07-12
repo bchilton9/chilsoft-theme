@@ -22,7 +22,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   height: 56px;
-  padding-right: 12rem;
+  padding-right: 32rem;
   padding: 0 1.75rem 0 0.5rem;
   background: rgba(0, 0, 0, 0.6); /* darker than before */
   backdrop-filter: blur(10px);
