@@ -182,3 +182,10 @@ pre {
   background: #0ff;
   color: #000;
   box-shadow: 0 0 10px #0ff;
+}
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
