@@ -32,3 +32,17 @@ main {
     height: env(safe-area-inset-bottom);
   }
 }
+
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+.full-logo {
+  max-width: none !important;
+  height: auto !important;
+  display: inline !important;
+  margin: 0 !important;
+}
