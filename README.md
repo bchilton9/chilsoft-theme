@@ -1,3 +1,7 @@
+![License](https://img.shields.io/github/license/bchilton9/chilsoft-theme)
+![Last Commit](https://img.shields.io/github/last-commit/bchilton9/chilsoft-theme)
+![Shell Script](https://img.shields.io/badge/made%20with-bash-1f425f.svg)
+
 # 🧬 ChilSoft Theme
 
 A glowing, neon-drenched Jekyll theme built for terminal nerds, hackers, home lab junkies, and caffeine-powered chaos engineers.
