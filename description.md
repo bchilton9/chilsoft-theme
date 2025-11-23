@@ -1,1 +1,1 @@
-GitHub theme for pages connected to ChilSoft.
+<strong>ChilSoft’s</strong> repo and host with GitHub Pages.
